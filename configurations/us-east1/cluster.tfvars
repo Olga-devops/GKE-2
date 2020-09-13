@@ -1,1 +1,12 @@
-
+  
+google_project_id = "caramel-anvil-289323"
+region = "us-east1"
+cluster_version = "1.15"
+cluster_node_count = "2"
+google_credentials = "/home/olgadevops28/olga-service-account.json"
+cluster_network = "default"
+subnetwork = "default"
+cluster_name = "gke-cluster-3"
+machine_type = "e2.micro"
+deployment_environment = ""
+google_bucket_name = "cluster-bucket-olga"
