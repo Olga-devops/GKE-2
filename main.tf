@@ -1,5 +1,5 @@
 resource "google_container_cluster" "master" {
-  name     = "my-gke-cluster"
+  name     = var.cluster_name
   location = var.region
   project  = var.google_project_id
   
