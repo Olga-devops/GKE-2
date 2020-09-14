@@ -1,7 +1,7 @@
 resource "google_container_cluster" "master" {
-  name     = "my-gke-cluster"
-  location = "us-central1"
-  project  = ""
+  name     = my-gke-cluster
+  location = us-central1
+  project  = var.google_project_id
   
   # We can't create a cluster with no node pool defined, but we want to only use
   # separately managed node pools. So we create the smallest possible default node pool and immediately delete it.
