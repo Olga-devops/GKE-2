@@ -38,3 +38,5 @@ variable "machine_type" {
   default = "n1-standard-2"
   description = "- (Optional) The name of a Google Compute Engine machine type. Defaults to n1-standard-1. "
 }
+
+variable "deployment_environment" {}
