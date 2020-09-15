@@ -25,7 +25,11 @@ deployment_environment = "dev"
 google_bucket_name = "cluster-bucket"
 ```
 After you finish with defining all required variables go ahead and run 
+
 `source set-env.sh configurations/us-central1/cluster.tfvars`
+
 It will create a backend for environment you specified after that run
+
 `terraform apply -var-file $DATAFILE`
+
 It will create GKE in us-central1. Do same steps to create GKE in other regions
