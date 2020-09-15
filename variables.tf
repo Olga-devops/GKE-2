@@ -40,3 +40,4 @@ variable "machine_type" {
 }
 
 variable "deployment_environment" {}
+variable "google_bucket_name" {}
