@@ -1,4 +1,3 @@
-# GKE-2
 GKE with custom node-pool and .tfvars wich you can deploy in different regions
 -
 
