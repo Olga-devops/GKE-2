@@ -13,7 +13,7 @@ BUCKET=$(sed -nr 's/^google_bucket_name\s*=\s*"([^"]*)".*$/\1/p'             "$D
 PROJECT=$(sed -nr 's/^google_project_id\s*=\s*"([^"]*)".*$/\1/p'             "$DATAFILE")
 ENVIRONMENT=$(sed -nr 's/^deployment_environment\s*=\s*"([^"]*)".*$/\1/p'    "$DATAFILE")
 DEPLOYMENT=$(sed -nr 's/^deployment_name\s*=\s*"([^"]*)".*$/\1/p'            "$DATAFILE")
-CREDENTIALS=$(sed -nr 's/^credentials\s*=\s*"([^"]*)".*$/\1/p'               "$DATAFILE") 
+CREDENTIALS=$(sed -nr 's/^google_credentials\s*=\s*"([^"]*)".*$/\1/p'               "$DATAFILE") 
 
 if [ -z "$ENVIRONMENT" ]
 then
@@ -35,7 +35,7 @@ fi
 
 if [ -z "$CREDENTIALS" ]
 then
-    echo "setenv: 'credentials' file not set in configuration file."
+    echo "setenv: 'google_credentials' file not set in configuration file."
     return 1
 fi
 
