@@ -50,7 +50,7 @@ terraform {
   backend "gcs" {
     bucket  = "${BUCKET}"
     prefix  = "tools/gke"
-    project = "${PROJECT}"
+    #project = "${PROJECT}"
   }
 }
 EOF
